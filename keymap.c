@@ -16,7 +16,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
  * | LShift|   Y   |   X   |   C   |   V   |   B   |   N   |   M   |   ,   |   .   |  AUp  |   /   |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
- * |  FN1  |  GUI  | LCtrl | LAlt  | Lower |     Space     | Raise |  Fn2  | ALeft | ADown | ARight|
+ * |  FN1  |  GUI  | LCtrl | LAlt  | Lower |     Space     | Raise | AltGr | ALeft | ADown | ARight|
  * °-----------------------------------------------------------------------------------------------°
 */
 
@@ -40,8 +40,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 
 [_LOWER] = LAYOUT_planck_mit(
-	KC_TAB,		KC_PGUP,	KC_UP,		KC_PGDN,	KC_HOME,	KC_F5,			KC_CIRC,		KC_7,		KC_8,		KC_9,		KC_EQL,		KC_BSPC,
-	FN1,		KC_LEFT,	KC_DOWN,	KC_RIGHT,	KC_END,		RGB_TOG,		KC_NUHS,		KC_4,		KC_5,		KC_6,		KC_ASTR,	KC_SLSH,
+	KC_TAB,		KC_PGUP,	KC_UP,		KC_PGDN,	KC_HOME,	KC_TRNS,		KC_TRNS,		KC_7,		KC_8,		KC_9,		KC_EQL,		KC_BSPC,
+	FN1,		KC_LEFT,	KC_DOWN,	KC_RIGHT,	KC_END,		KC_TRNS,		KC_NUHS,		KC_4,		KC_5,		KC_6,		KC_ASTR,	KC_SLSH,
 	KC_LSFT,	KC_MUTE,	KC_VOLD,	KC_VOLU,	KC_MPLY,	KC_MPRV,		KC_MNXT,		KC_1,		KC_2,		KC_3,		KC_PLUS,	KC_ENTER,
 	KC_GESC,	RGB_TOG,	KC_LCTL,	KC_LALT,	LOWER,				KC_SPC,					KC_COMM,	KC_0,		KC_DOT,		KC_MINS,	KC_TRNS
 							),
@@ -54,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
  * | LShift|  Caps |   X   |   C   |   V   |       | ALeft | ADown |  AUp  | ARight|       | MRight|
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
- * | Reset |       |       |       | Lower |     Space     | Raise |  Fn2  |       |       |  Ins  |
+ * | Reset |RGB Tog|       |       | Lower |     Space     | Raise |  Fn2  |       |       |  Ins  |
  * °-----------------------------------------------------------------------------------------------°
 */
 
